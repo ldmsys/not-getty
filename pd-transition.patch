@@ -1,0 +1,13 @@
+--- notgetty.S	2022-02-27 02:42:07.000000000 +0900
++++ notgetty2.S	2022-02-27 02:58:37.000000000 +0900
+@@ -126,9 +126,7 @@
+         ret
+ 
+ 
+-login: db LF, "CentOS Linux 7 (Core)", LF, "Kernel 3.10.0-1127.el7.x86_64 on an x86_64", LF, LF, 0 ; CentOS 7
+-;login: db LF, "Debian GNU/Linux 7 localhost tty1", LF, LF, 0 ; Debian 7
+-;login: db LF, "Ubuntu 20.04.3 LTS localhost tty1", LF, LF, 0 ; Ubuntu 20.04
++login: db LF, LF, 0
+ usernameprompt: db "localhost login: ", 0
+ passwdprompt:   db "Password: ", 0
+ incorrect:      db "Login incorrect", LF, LF, 0
