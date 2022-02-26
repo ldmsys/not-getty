@@ -38,7 +38,7 @@ _login:
     jmp _login
 
 ioctl: ; [ic] = inputted character cnt, [sh] = show character
-    mov BYTE [ic], 0
+    mov BYTE [ic], 00h
     .loop1:
         xor ah, ah
         int 16h
@@ -65,7 +65,7 @@ ioctl: ; [ic] = inputted character cnt, [sh] = show character
     .printascii:
         mov ah, 0Eh
         int 10h
-        jmp ioctl
+        jmp .loop1
     
     .cursorback:
         pusha
