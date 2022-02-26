@@ -17,6 +17,7 @@ mov BYTE [cn], 00h
 _login:
     mov si, usernameprompt
     call print
+    mov BYTE [sh], 01h
     call ioctl
 
     mov si, passwdprompt
