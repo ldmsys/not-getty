@@ -1,6 +1,7 @@
 # Not Getty
 ## What is this?
 This is not getty.
+![image](https://user-images.githubusercontent.com/16889349/155854341-1075097c-5277-4bb5-986e-e5b36e94b3b3.png)
 
 It's just bootloader that looks like *nix's login screen for no purpose.
 
